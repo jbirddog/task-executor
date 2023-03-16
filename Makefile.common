@@ -1,0 +1,3 @@
+.PHONY : test
+test:
+	$(CMD_RUNNER) unittest-parallel -vs tests -p \*_test.py -t .

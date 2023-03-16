@@ -1,0 +1,8 @@
+services:
+  dev:
+    container_name: task-executor-dev
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./tests:/app/tests
