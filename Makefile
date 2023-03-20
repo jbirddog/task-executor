@@ -15,6 +15,6 @@ sh:
 # overrides from common to run commands in dev container
 #
 
-.PHONY : test
-test:
-	$(MAKE) CMD_RUNNER="$(CMD_RUNNER)" -f Makefile.common $@
+.PHONY : %
+d-%:
+	$(MAKE) CMD_RUNNER="$(CMD_RUNNER)" -f Makefile.common $*

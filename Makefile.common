@@ -1,3 +1,11 @@
-.PHONY : test
+.PHONY: test
 test:
 	$(CMD_RUNNER) unittest-parallel -vs tests -p \*_test.py -t .
+
+.PHONY: serial
+serial:
+	$(CMD_RUNNER) python serial.py
+
+.PHONY: async
+async:
+	$(CMD_RUNNER) python async.py
