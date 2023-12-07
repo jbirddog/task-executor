@@ -10,13 +10,18 @@ sh:
 	$(CMD_RUNNER) /bin/sh
 
 tests:
+	$(CMD_RUNNER) python -m unittest discover -vs tests -p \*_test.py -t .
+
+tests-par:
 	$(CMD_RUNNER) unittest-parallel -vs tests -p \*_test.py -t .
 
-serial:
+time-serial:
 	$(CMD_RUNNER) python serial.py
 
-async:
+time-async:
 	$(CMD_RUNNER) python async.py
 
 
-.PHONY: build sh tests serial async
+.PHONY: build tests tests-par \
+	sh \
+	time-serial time-async
