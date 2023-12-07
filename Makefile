@@ -12,9 +12,6 @@ sh:
 tests:
 	$(CMD_RUNNER) python -m unittest discover -vs tests -p \*_test.py -t .
 
-tests-par:
-	$(CMD_RUNNER) unittest-parallel -vs tests -p \*_test.py -t .
-
 time-serial:
 	$(CMD_RUNNER) python serial.py
 

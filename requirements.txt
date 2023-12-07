@@ -1,2 +1,2 @@
 uvloop
-https://github.com/sartography/SpiffWorkflow/archive/f162aac43af3af18d1a55186aeccea154fb8b05d.tar.gz
+https://github.com/sartography/SpiffWorkflow/archive/1f8cffb4777b6087bd56736270e32bddb20a466f.tar.gz
