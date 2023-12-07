@@ -10,8 +10,6 @@ COPY requirements.txt dev_requirements.txt .
 
 RUN pip install --no-cache-dir -r dev_requirements.txt
 
-COPY Makefile.common Makefile
-
 #RUN make test
 
 #CMD ["python", "main.py"]
