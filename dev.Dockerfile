@@ -10,7 +10,4 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-#RUN make test
-
-#CMD ["python", "main.py"]
-#CMD "sh"
+CMD ["python", "main.py"]
